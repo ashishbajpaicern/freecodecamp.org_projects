@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Survey Form</title>
   </head>
   <body>
@@ -11,18 +12,50 @@
     <p id="description">
       Thank you for taking the time to help us improve the platform
     </p>
-    <form action="submit" id="survey-form"></form>
-    <label for="name">Name</label>
-    <input type="text" placeholder="Enter your name" required id="name" />
-    <label for="email">Email</label>
-    <input type="email" placeholder="Enter your Email" required id="email" />
-    <label for="age">Age</label>
-    <input
-      type="number"
-      placeholder="Enter your Age"
-      id="age"
-      min="13"
-      max="60"
-    />
+    <form action="submit" id="survey-form">
+      <label id="name-label"
+        >Name
+        <input
+          type="text"
+          placeholder="Enter your name"
+          required
+          value="name"
+          id="name"
+      /></label>
+
+      <label id="email-label"
+        >Email
+        <input
+          type="email"
+          placeholder="Enter your Email"
+          required
+          value="email"
+          id="email"
+      /></label>
+
+      <label id="number-label"
+        >Age
+        <input
+          type="number"
+          placeholder="Enter your Age"
+          value="age"
+          min="13"
+          max="60"
+          id="number"
+      /></label>
+
+      <label for="dropdown">Choose</label>
+      <select name="dropdown" id="dropdown">
+        <option value="a">a</option>
+        <option value="b">b</option>
+      </select>
+      <label for="radio">What would you like to improve</label>
+      <input type="radio" name="option" value="a" />ashish
+      <input type="radio" name="option" value="b" />bajpai
+      <input type="checkbox" value="a" />a <input type="checkbox" value="b" />b
+      <input type="checkbox" value="c" />c
+      <textarea name="area" id="area" cols="30" rows="10"></textarea>
+      <input type="submit" id="submit" />
+    </form>
   </body>
 </html>
