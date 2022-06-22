@@ -1,0 +1,69 @@
+body {
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    font-family: sans-serif;
+    padding: 20px;
+     }
+.title {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 25;
+    font-style: italic;
+}
+div {
+    width: 100%;
+    background-color: rgba(27, 27, 50, 0.8);
+    margin: auto;
+    padding: 40px;
+    max-width: 1000px;
+    border-radius: 0.2em;
+    align-content: center;
+
+}
+
+
+    label {
+        display: block;
+        align-items: center;
+        font-size: 1.125rem;
+        margin: 1rem; 
+        color: white;
+    }
+
+
+    input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: #0a0a23;
+    border: 10px solid #0a0a23;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+  }
+
+  select {
+   margin-left: 1em;
+   width: 99.25%;
+  }
+
+  .inline {
+    width: 2.5%;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+
+  input[type="radio"] {
+    font-weight: 1000px;
+  }
+
+ 

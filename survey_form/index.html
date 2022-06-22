@@ -8,54 +8,62 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">
+    <h1 id="title" class="title">Survey Form</h1>
+    <p id="description" class="description">
       Thank you for taking the time to help us improve the platform
     </p>
-    <form action="submit" id="survey-form">
-      <label id="name-label"
-        >Name
-        <input
-          type="text"
-          placeholder="Enter your name"
-          required
-          value="name"
-          id="name"
-      /></label>
+    <div>
+      <form action="submit" id="survey-form">
+        <label id="name-label"
+          >Name
+          <input type="text" placeholder="Enter your name" required id="name"
+        /></label>
 
-      <label id="email-label"
-        >Email
-        <input
-          type="email"
-          placeholder="Enter your Email"
-          required
-          value="email"
-          id="email"
-      /></label>
+        <label id="email-label"
+          >Email
+          <input
+            type="email"
+            placeholder="Enter your Email"
+            required
+            id="email"
+        /></label>
 
-      <label id="number-label"
-        >Age
-        <input
-          type="number"
-          placeholder="Enter your Age"
-          value="age"
-          min="13"
-          max="60"
-          id="number"
-      /></label>
+        <label id="number-label"
+          >Age
+          <input
+            type="number"
+            placeholder="Enter your Age"
+            min="13"
+            max="60"
+            id="number"
+        /></label>
 
-      <label for="dropdown">Choose</label>
-      <select name="dropdown" id="dropdown">
-        <option value="a">a</option>
-        <option value="b">b</option>
-      </select>
-      <label for="radio">What would you like to improve</label>
-      <input type="radio" name="option" value="a" />ashish
-      <input type="radio" name="option" value="b" />bajpai
-      <input type="checkbox" value="a" />a <input type="checkbox" value="b" />b
-      <input type="checkbox" value="c" />c
-      <textarea name="area" id="area" cols="30" rows="10"></textarea>
-      <input type="submit" id="submit" />
-    </form>
+        <label for="dropdown">How did you find me?</label>
+        <select name="dropdown" id="dropdown">
+          <option value="">(select any one)</option>
+          <option value="a">Linked in</option>
+          <option value="b">instagram</option>
+          <option value="b">other...</option>
+        </select>
+        <label for="radio">Would you like to work with me?</label>
+        <label
+          ><input type="radio" name="option" value="a" class="inline" />
+          Yes</label
+        >
+        <label
+          ><input type="radio" name="option" value="b" class="inline" />
+          Maybe</label
+        >
+        <label
+          ><input type="radio" name="option" value="c" class="inline" />
+          No</label
+        >
+        <input type="checkbox" value="a" />a
+        <input type="checkbox" value="b" />b
+        <input type="checkbox" value="c" />c
+        <textarea name="area" id="area" cols="30" rows="10"></textarea>
+        <input type="submit" id="submit" />
+      </form>
+    </div>
   </body>
 </html>
