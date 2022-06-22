@@ -58,11 +58,32 @@
           ><input type="radio" name="option" value="c" class="inline" />
           No</label
         >
-        <input type="checkbox" value="a" />a
-        <input type="checkbox" value="b" />b
-        <input type="checkbox" value="c" />c
-        <textarea name="area" id="area" cols="30" rows="10"></textarea>
-        <input type="submit" id="submit" />
+        <label>What would you like me to do?</label>
+        <label
+          ><input type="checkbox" value="a" class="inline" />Front-end</label
+        >
+        <label
+          ><input type="checkbox" value="b" class="inline" />Back-end</label
+        >
+        <label><input type="checkbox" value="c" class="inline" />API</label>
+        <label
+          ><input type="checkbox" value="c" class="inline" />Database</label
+        >
+        <label
+          ><input type="checkbox" value="c" class="inline" />Framework</label
+        >
+        <fieldset>
+          <label>Explain your Query below: </label>
+          <textarea
+            name="area"
+            id="area"
+            cols="30"
+            rows="10"
+            placeholder="Write your query"
+          ></textarea>
+
+          <input type="submit" id="submit" />
+        </fieldset>
       </form>
     </div>
   </body>

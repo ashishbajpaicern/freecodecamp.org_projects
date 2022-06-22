@@ -32,7 +32,7 @@ div {
     label {
         display: block;
         align-items: center;
-        font-size: 1.125rem;
+        font-size: 1.3rem;
         margin: 1rem; 
         color: white;
     }
@@ -49,6 +49,7 @@ div {
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
+    border-radius: 00.2em;
   }
 
   select {
@@ -65,5 +66,17 @@ div {
   input[type="radio"] {
     font-weight: 1000px;
   }
+  
+  textarea {
+    width: 96.2%;
+    margin-left: 13px;
 
- 
+  }
+  input[type="submit"] {
+    margin-left: 13px;
+    width: 98.8%;
+  }
+
+  fieldset {
+    border: none;
+  }
