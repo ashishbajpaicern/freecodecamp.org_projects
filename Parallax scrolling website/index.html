@@ -4,17 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Logo</title>
   </head>
   <body>
     <header>
-      <a href="#">logo</a>
+      <a href="#" class="logo">logo</a>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Work</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </header>
+    <section>
+      <img src="photos/stars.png" id="stars" />
+      <img src="photos/moon.png" id="moon" />
+      <img src="photos/mountains_behind.png" id="mountains_behind" />
+      <h2 id="text">Moon Light</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="photos/mountains_front.png" id="mountains_front" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>Parallex Scrolling Effects</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque
+        illum omnis commodi consequuntur, sunt doloribus reiciendis ex corporis
+        blanditiis sed ad amet delectus. Maiores ad error dolorem distinctio
+        cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+        eveniet sint pariatur totam qui consequatur adipisci! Excepturi,
+        voluptatibus? Aperiam eius doloremque nobis enim illo iste id magnam
+        quod, quas deleniti? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Sit facere obcaecati ut laudantium vitae hic laborum quasi eius
+        eaque a, quo culpa voluptatibus numquam blanditiis perspiciatis, quam
+        quibusdam cum similique. <br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque
+        illum omnis commodi consequuntur, sunt doloribus reiciendis ex corporis
+        blanditiis sed ad amet delectus. Maiores ad error dolorem distinctio
+        cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+        eveniet sint pariatur totam qui consequatur adipisci! Excepturi,
+        voluptatibus? Aperiam eius doloremque nobis enim illo iste id magnam
+        quod, quas deleniti? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Sit facere obcaecati ut laudantium vitae hic laborum quasi eius
+        eaque a, quo culpa voluptatibus numquam blanditiis perspiciatis, quam
+        quibusdam cum similique. <br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque
+        illum omnis commodi consequuntur, sunt doloribus reiciendis ex corporis
+        blanditiis sed ad amet delectus. Maiores ad error dolorem distinctio
+        cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+        eveniet sint pariatur totam qui consequatur adipisci! Excepturi,
+        voluptatibus? Aperiam eius doloremque nobis enim illo iste id magnam
+        quod, quas deleniti? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Sit facere obcaecati ut laudantium vitae hic laborum quasi eius
+        eaque a, quo culpa voluptatibus numquam blanditiis perspiciatis, quam
+        quibusdam cum similique.<br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque
+        illum omnis commodi consequuntur, sunt doloribus reiciendis ex corporis
+        blanditiis sed ad amet delectus. Maiores ad error dolorem distinctio
+        cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+        eveniet sint pariatur totam qui consequatur adipisci! Excepturi,
+        voluptatibus? Aperiam eius doloremque nobis enim illo iste id magnam
+        quod, quas deleniti? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Sit facere obcaecati ut laudantium vitae hic laborum quasi eius
+        eaque a, quo culpa voluptatibus numquam blanditiis perspiciatis, quam
+        quibusdam cum similique. <br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque
+        illum omnis commodi consequuntur, sunt doloribus reiciendis ex corporis
+        blanditiis sed ad amet delectus. Maiores ad error dolorem distinctio
+        cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+        eveniet sint pariatur totam qui consequatur adipisci! Excepturi,
+        voluptatibus? Aperiam eius doloremque nobis enim illo iste id magnam
+        quod, quas deleniti? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Sit facere obcaecati ut laudantium vitae hic laborum quasi eius
+        eaque a, quo culpa voluptatibus numquam blanditiis perspiciatis, quam
+        quibusdam cum similique.
+      </p>
+    </div>
+    <script>
+      let stars = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let mountain_behind = document.getElementById("mountain_behind");
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+      let mountains_front = document.getElementById("mountains_front");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value + "px";
+      });
+    </script>
   </body>
 </html>
