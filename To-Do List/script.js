@@ -1,4 +1,4 @@
-window.addEventListener('load',() => {
+window.addEventListener('load', () => {
     todos = JSON.parse(localStorage.getItem('todos')) || [];
     const nameInput = document.querySelector('#name');
     const newTodoForm = document.querySelector('#new-todo-form');
@@ -7,8 +7,8 @@ window.addEventListener('load',() => {
 
     nameInput.value = username;
 
-    nameInput.addEventListener('change',e => {
+    nameInput.addEventListener('change', e => {
         localStorage.setItem('username', e.target.value);
     })
 
-}) 
+})
