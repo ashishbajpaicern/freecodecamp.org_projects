@@ -72,7 +72,7 @@ h4 {
 .greeting .title, 
 .greeting .title input {
 	color: var(--dark);
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 700;
 }
 
@@ -209,7 +209,6 @@ background: #FFD700;
 box-shadow:  14px 14px 28px #665600,
              -14px -14px 28px #ffff00;
 }
-////////////////////////////
 .todo-item label {
 	display: block;
 	margin-right: 1rem;
