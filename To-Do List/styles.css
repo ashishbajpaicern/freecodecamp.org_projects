@@ -3,9 +3,9 @@
 	--primary: #EA40A4;
 	--business: #3a82ee;
 	--personal: var(--primary);
-	--light: #EEE;
-	--grey: #888;
-	--dark: #313154;
+	--light: #FFD700;
+	--grey: black;
+	--dark: black;
 	--danger: #ff5b57;
 
 	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -46,14 +46,15 @@ section {
 
 h3 {
 	color: var(--dark);
-	font-size: 1rem;
-	font-weight: 400;
+	font-size: 1.2rem;
+	font-weight: 4000;
 	margin-bottom: 0.5rem;
 }
 
 h4 {
+	margin: 2%;
 	color: var(--grey);
-	font-size: 0.875rem;
+	font-size: 1rem;
 	font-weight: 700;
 	margin-bottom: 0.5rem;
 }
@@ -71,11 +72,14 @@ h4 {
 .greeting .title, 
 .greeting .title input {
 	color: var(--dark);
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	font-weight: 700;
 }
 
+
+
 .create-todo input[type="text"] {
+	margin-top: 2%;
 	display: block;
 	width: 100%;
 	font-size: 1.125rem;
@@ -85,6 +89,11 @@ h4 {
 	border-radius: 0.5rem;
 	box-shadow: var(--shadow);
 	margin-bottom: 1.5rem;
+	border-radius: 27px;
+background: #FFD700;
+box-shadow:  14px 14px 28px #665600,
+             -14px -14px 28px #ffff00;
+	
 }
 
 .create-todo .options {
@@ -95,6 +104,7 @@ h4 {
 }
 
 .create-todo .options label {
+	margin-top: 2%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -104,6 +114,10 @@ h4 {
 	box-shadow: var(--shadow);
 	border-radius: 0.5rem;
 	cursor: pointer;
+	border-radius: 27px;
+background: #FFD700;
+box-shadow:  14px 14px 28px #665600,
+             -14px -14px 28px #ffff00;
 }
 
 input[type="radio"],
@@ -124,7 +138,7 @@ input[type="checkbox"] {
 
 .bubble.personal {
 	border-color: var(--personal);
-	box-shadow: var(--personal-glow);
+	box-shadow:  var(--personal-glow);
 }
 
 .bubble::after {
@@ -157,6 +171,7 @@ input:checked ~ .bubble::after {
 }
 
 .create-todo input[type="submit"] {
+	margin-top: 5%;
 	display: block;
 	width: 100%;
 	font-size: 1.125rem;
@@ -164,11 +179,13 @@ input:checked ~ .bubble::after {
 	color: #FFF;
 	font-weight: 700;
 	text-transform: uppercase;
-	background-color: var(--primary);
+	background-color: rgb(62, 62, 62);
 	box-shadow: var(--personal-glow);
 	border-radius: 0.5rem;
 	cursor: pointer;
 	transition: 0.2s ease-out;
+	
+
 }
 
 .create-todo input[type="submit"]:hover {
@@ -187,8 +204,12 @@ input:checked ~ .bubble::after {
 	border-radius: 0.5rem;
 	box-shadow: var(--shadow);
 	margin-bottom: 1rem;
+	border-radius: 27px;
+background: #FFD700;
+box-shadow:  14px 14px 28px #665600,
+             -14px -14px 28px #ffff00;
 }
-
+////////////////////////////
 .todo-item label {
 	display: block;
 	margin-right: 1rem;
@@ -235,3 +256,10 @@ input:checked ~ .bubble::after {
 	text-decoration: line-through;
 	color: var(--grey);
 }
+
+.footer{ 
+	position: fixed;     
+	text-align: center;    
+	bottom: 5px; 
+	width: 100%;
+} 
