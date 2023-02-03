@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // random image is shown when cursor is hover on the image
+      function randomImage() {
+        var x = document.getElementById("image");
+        var random = Math.floor(Math.random() * 4) + 1;
+        x.src = "images/" + random + ".jpg";
+      }
+    </script>
+    <div>
+      <img
+        id="image"
+        src="images/1.jpg"
+        onmouseover="randomImage()"
+        outmouseover="randomImage()"
+        alt="image"
+      />
+    </div>
+  </body>
+</html>
