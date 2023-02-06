@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body style="overflow: hidden">
     <script>
       // random image is shown when cursor is hover on the image
       function randomImage() {
         var x = document.getElementById("image");
-        var random = Math.floor(Math.random() * 4) + 1;
+        var random = Math.floor(Math.random() * 9);
         x.src = "images/" + random + ".jpg";
       }
     </script>
@@ -20,8 +20,9 @@
         id="image"
         src="images/1.jpg"
         onmouseover="randomImage()"
-        outmouseover="randomImage()"
+        onmouseleave="randomImage()"
         alt="image"
+        width="1900px"
       />
     </div>
   </body>

@@ -7,15 +7,13 @@
     <title>Document</title>
   </head>
   <body>
+    <p></p>
+    <p></p>
     <script>
-      //change text color on hover using js
-      function changeColor() {
-        var x = document.getElementById("text");
-        x.style.color = "red";
-      }
+      //count p tags
+      document.write(
+        "total p tags = " + document.getElementsByTagName("p").length
+      );
     </script>
-    <div>
-      <h1 id="text" onmouseover="changeColor()">Hello</h1>
-    </div>
   </body>
 </html>
